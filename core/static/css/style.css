@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black
+}
+
+#hero {
+
+    min-height: 100vh;
+
+    background-image: url("../images/photoicon4.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    max-width: 700px;
+
+    position: relative;
+    z-index: 1;
+
+    color: white;
+
+    transform: translateY(-120px);
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+hero.content p {
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+.hero-button {
+    
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: rbga(255, 255, 255, 0.2);
+
+    border: 2px solid white;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 8px;
+
+    margin-top: 50px;
+}
