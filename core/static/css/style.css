@@ -147,9 +147,11 @@ hero.content p {
 
 }
 
-.about-workshop-text {
+ .about-workshop-text {
 
-    flex: 1;
+    text-align: center;
+
+     flex: 1;
 
 }
 
@@ -159,26 +161,22 @@ hero.content p {
 
     min-height: 400px;
 
-    border: 2px solid black;
-
     display: flex;
 
     justify-content: center;
 
     align-items: center;
-
+    
 }
-.about-workshop-image img {
 
+.about-workshop-image img {
     width: 100%;
 
-    height: 100%;
+    max-width: 500px;
 
-    object-fit: cover;
-
-    border-radius: 12px;
-
+    height: 550px;
 }
+
 .artists-preview {
 
     display: flex;
@@ -263,4 +261,91 @@ hero.content p {
 
     line-height: 1.6;
 
+}
+
+.container {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 40px;
+
+}
+.gallery-image {
+
+    height: 300px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+    margin-bottom: 60px;    
+
+}
+
+ .about-artists-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+}
+
+
+.about-artists-title {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+    margin-bottom: 60px;
+}
+
+.about-artist-photo {
+
+    height: 350px;
+
+    background-color: black;
+
+    border-radius: 12px;
+
+    width: 100%;
+
+}
+
+.about-artist-profile {
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    max-width: 450px;
+
+    width: 100%;
+
+    margin: 0 auto;
 }
